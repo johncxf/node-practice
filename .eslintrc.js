@@ -19,9 +19,6 @@ module.exports = {
         'ecmaVersion': 'latest',
         'sourceType': 'module'
     },
-    'plugins': [
-        'react'
-    ],
     'rules': {
         'no-console': 'error',
         'no-var': 'warn',
