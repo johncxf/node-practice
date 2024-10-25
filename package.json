@@ -1,5 +1,5 @@
 {
-  "name": "node_practive",
+  "name": "node-practive",
   "version": "1.0.0",
   "description": "Node.js practice",
   "main": "src/index.js",
@@ -15,11 +15,8 @@
     }
   },
   "dependencies": {
-    "bat-automator": "^2.1.5",
-    "bat-cloud": "^6.8.7",
     "commander": "~5.1.0",
     "multi-automator": "^1.0.1",
-    "smartapp-cts": "^2.0.8"
   },
   "devDependencies": {
     "chai": "^4.3.7",
