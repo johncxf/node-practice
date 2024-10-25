@@ -5,17 +5,28 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint ./src ./test",
+    "lint": "eslint ./src ./test",
     "unit": "mocha -t 240000 ./test --reporter mochawesome --reporter-options reportDir=./.report,reportFilename=report.html"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "echo $HUSKY_GIT_PARAMS"
+    }
+  },
   "dependencies": {
-    "chai": "^4.3.6",
+    "bat-automator": "^2.1.5",
+    "bat-cloud": "^6.8.7",
     "commander": "~5.1.0",
-    "mocha": "^9.2.2",
-    "mochawesome": "^7.1.3"
+    "multi-automator": "^1.0.1",
+    "smartapp-cts": "^2.0.8"
   },
   "devDependencies": {
-    "eslint": "^8.12.0"
+    "chai": "^4.3.7",
+    "eslint": "^8.12.0",
+    "husky": "^8.0.3",
+    "mocha": "^9.2.2",
+    "mochawesome": "^7.1.3"
   },
   "repository": {
     "type": "git",
